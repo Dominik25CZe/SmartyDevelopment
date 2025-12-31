@@ -1,0 +1,62 @@
+name: SmartyChat
+version: '0.0.1'
+main: dev.dev.SmartyChat.SmartyChat
+api-version: '1.21'
+authors: [ Dominik25_CZe ]
+description: plugin for chat control
+softdepend: [PlaceholderAPI, LuckPerms]
+commands:
+  chat:
+    description: Main command for the SmartyChat plugin.
+    usage: /chat [reload|help|mutechat|msg|reply|mute|unmute]
+    permission: smartychat.use
+    permission-message: &cYou don't have permission to use this command.
+  msg:
+    description: Sends a private message to a player.
+    usage: /msg <player> <message>
+    aliases: [tell, w]
+    permission: smartychat.msg
+  reply:
+    description: Replies to the last private message.
+    usage: /reply <message>
+    aliases: [r]
+    permission: smartychat.reply
+  mute:
+    description: Mutes a player.
+    usage: /mute <player> [time] [reason]
+    permission: smartychat.mute
+  unmute:
+    description: Unmutes a player.
+    usage: /unmute <player>
+    permission: smartychat.unmute
+permissions:
+  smartychat.use:
+    description: Allows a player to use the /chat command.
+    smartychat: op
+  smartychat.reload:
+    description: Allows a player to reload the plugin configuration.
+    default: op
+  smartychat.help:
+    description: Allows a player to see the help menu.
+    default: true
+  smartychat.color:
+    description: Allows a player to use color codes in chat.
+    default: false
+  smartychat.mutechat:
+    description: Allows to mute global chat.
+    default: op
+  smartychat.antiswear.bypass:
+    description: Allows a player to bypass the anti-swear filter.
+    default: op
+  smartychat.msg:
+    description: Allows a player to send private messages.
+    default: true
+  smartychat.reply:
+    description: Allows a player to reply to private messages.
+    default: true
+  smartychat.mute:
+    description: Allows a player to mute other players.
+    default: op
+  smartychat.unmute:
+    description: Allows a player to unmute other players.
+    default: op

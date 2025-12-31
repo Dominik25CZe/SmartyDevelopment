@@ -1,0 +1,69 @@
+# =======================
+# JustChat Config
+# =======================
+# Prefix used for all plugin messages
+# =======================
+prefix: "&x&A&2&8&B&5&9&lᴊ&x&A&4&8&D&5&A&lᴜ&x&A&5&8&E&5&C&lꜱ&x&A&7&9&0&5&D&lᴛ&x&A&9&9&1&5&E&lᴄ&x&A&A&9&3&6&0&lʜ&x&A&C&9&4&6&1&lᴀ&x&A&E&9&6&6&2&lᴛ &8» &f"
+
+# =======================
+# Messages
+# =======================
+# Messages shown in chat
+# =======================
+messages:
+  not-a-player: "&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴꜱᴏʟᴇ."
+  no-permission: "&cʏᴏᴜ ᴅᴏ ɴᴏᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ."
+  reload-success: "&aᴄᴏɴꜰɪɢᴜʀᴀᴛɪᴏɴ ʜᴀꜱ ʙᴇᴇɴ ʀᴇʟᴏᴀᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ!"
+  chat-muted: "&cᴛʜᴇ ᴄʜᴀᴛ ɪꜱ ᴄᴜʀʀᴇɴᴛʟʏ ᴍᴜᴛᴇᴅ."
+  chat-mute-enabled: "&cɢʟᴏʙᴀʟ ᴄʜᴀᴛ ʜᴀꜱ ʙᴇᴇɴ ᴍᴜᴛᴇᴅ."
+  chat-mute-disabled: "&aɢʟᴏʙᴀʟ ᴄʜᴀᴛ ʜᴀꜱ ʙᴇᴇɴ ᴜɴᴍᴜᴛᴇᴅ."
+  player-not-found: "&cᴘʟᴀʏᴇʀ {player} ɴᴏᴛ ꜰᴏᴜɴᴅ."
+  no-one-to-reply-to: "&cʏᴏᴜ ʜᴀᴠᴇ ɴᴏ ᴏɴᴇ ᴛᴏ ʀᴇᴘʟʏ ᴛᴏ."
+  cannot-message-self: "&cʏᴏᴜ ᴄᴀɴɴᴏᴛ ᴍᴇꜱꜱᴀɢᴇ ʏᴏᴜʀꜱᴇʟꜰ."
+  private-message-format-sender: "&7[&fᴍᴇ &7-> &f{receiver}&7] &f{message}"
+  private-message-format-receiver: "&7[&f{sender} &7-> &fMe&7] &f{message}"
+  player-muted: "&cʏᴏᴜ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟʏ ᴍᴜᴛᴇᴅ."
+  player-mute-success: "&aꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴍᴜᴛᴇᴅ {player}."
+  player-unmute-success: "&aꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴜɴᴍᴜᴛᴇᴅ {player}."
+  player-already-muted: "&c{player} ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴍᴜᴛᴇᴅ."
+  player-not-muted: "&c{player} ɪꜱ ɴᴏᴛ ᴍᴜᴛᴇᴅ."
+
+# =======================
+# Chat Formats
+# =======================
+# Chat format for different groups
+# =======================
+# Available placeholders:
+# {prefix} - Player's LuckPerms prefix
+# {suffix} - Player's LuckPerms suffix
+# {player} - Player's name
+# {group} - Player's primary group
+# {message} - The chat message
+# Plus all PlaceholderAPI placeholders if installed
+
+chat-formats:
+  default: "&7{prefix}&f{player}&7{suffix}&f: &r{message}" # Default format for players without specific group format
+
+  admin: "&c{prefix}&f{player}&c{suffix}&f: &r{message}" # Admin group format
+
+  moderator: "&9{prefix}&f{player}&9{suffix}&f: &r{message}" # Moderator group format
+
+  vip: "&6{prefix}&f{player}&6{suffix}&f: &r{message}" # VIP group format
+
+  helper: "&a{prefix}&f{player}&a{suffix}&f: &r{message}" # Helper group format
+
+  builder: "&d{prefix}&f{player}&d{suffix}&8: &f{message}" # Builder group format
+
+# =======================
+# Anti-Swear System
+# =======================
+# Enable or disable the anti-swear system
+# =======================
+anti-swear:
+  enabled: true
+  blocked-words:
+    - "badword1"
+    - "badword2"
+    - "example"
+  replacement: "***"
+  message: "&cᴘʟᴇᴀꜱᴇ ᴅᴏ ɴᴏᴛ ᴜꜱᴇ ɪɴᴀᴘᴘʀᴏᴘʀɪᴀᴛᴇ ʟᴀɴɢᴜᴀɢᴇ."
